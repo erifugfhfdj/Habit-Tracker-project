@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9783530849.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 id="tHeader">Habit Tracker</span></h1>
+    <div id="inputbox">
+        <div class="info">
+            <p class="p1">Track your habits with the James Clear' Atomic Habits behavior scorecard model.
+                Take a step closer to breaking free from bad habits by bringing them to your conscious mind everyday.
+                Categorize a behavior within a specific state. Try not to judge yourself<span
+                    style="font-weight: bold;color:#9fcdf8;" id="user"></span>, simply act as an observer.
+            </p>
+        </div>
+        <div class="input-fields">
+            <label for="habit">Habit:</label>
+            <div id="inputs">
+                <input id="habit" type="text" placeholder="Eg: Brushed in the moring" value="" required>
+                <input id="habitDate" type="date" min="" value="" required>
+            </div>
+            <label for="state">State:</label><br>
+            <select name="" id="state">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="Neutral">Neutral</option>
+            </select><br>
+            <div class="submit-field">
+                <button id="smbtn">Submit</button><br>
+            </div>
+            <span id="message"></span>
+        </div>
+    </div>
+    <br>
+    <div id='habitList'>
+        <div class='output'>
+            <h3 class="habitHeader">Add to your habit list</h3>
+            <ul id="probody"></ul>
+            <div id="lists"></div>
+
+            <div id="clearBox">
+                <button id="clear">Clear List</button>
+                <button id="reset">Reset All Data</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="celebration">
+        <div class="celebrate">
+            <div class="f1">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+            <div class="f2">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+            <div class="f3">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+            <div class="f4">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+        </div><br>
+
+    </div>
+    <div id="congratulations"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
